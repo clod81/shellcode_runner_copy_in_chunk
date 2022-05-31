@@ -6,6 +6,6 @@ Yes the code is shit, but meh so what - not like I have the whole day to write g
 
 Tested with Meterpreter staged rev HTTPS payload
 
-![Windowz](https://github.com/clod81/shellcode_runner_copy_in_chunk/raw/master/1.png "Windowz")
+![Windowz](https://github.com/clod81/shellcode_runner_copy_in_chunk/blob/main/1.png?raw=true "Windowz")
 
-![Meterpreter](https://github.com/clod81/shellcode_runner_copy_in_chunk/raw/master/2.png "Meterpreter")
+![Meterpreter](https://github.com/clod81/shellcode_runner_copy_in_chunk/blob/main/2.png?raw=true "Meterpreter")
