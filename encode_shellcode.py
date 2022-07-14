@@ -22,11 +22,10 @@ for b in range(len(contents)):
 count = 0
 for x in encoded:
 	if count < len(encoded)-1:
-		output += "0x{}, ".format(x)
-		count += 1
+		output += "0x{}, ".format(x)	
 	else:
 		output += "0x{}".format(x)
-		count += 1
+	count += 1
 	if count % 20 == 0:
 		output += "\n"
 
